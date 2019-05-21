@@ -1,15 +1,20 @@
 #ifndef OPERATION_H
 #define OPERATION_H
 
-#include <string>
+#include<string>
+#include<stack>
+#include<vector>
+#include<cmath>
+#include<iostream>
 
 using namespace std;
 
 class Operation {
     protected:
         string equation;
-              
-    public:  
+        int l,r,ind;
+        vector<int> posBrackets;
+    public:
         static Operation* buildFromEquation(string equation);
 
         inline string name() { return equation; }
