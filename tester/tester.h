@@ -3,6 +3,7 @@
 
 #include <stdexcept>
 #include <iostream>
+#include<unordered_map>
 #include <assert.h>
 #include <string.h>
 
